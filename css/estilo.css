@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+/*
+Cores em hexadecimal:
+
+nome            | fundo     | texto     |
+Tomate          | #FF6347   | #fff      | 
+laranja         | #FFA500   | #fff      |
+Trapaceiro azul | #1E90FF   | #fff      |
+MediumSeaGreen  | #3CB371   | #fff      |
+cinzento        | #808080   | #fff      |
+Azul ardósia    | #6A5ACD   | #fff      |
+Tolet           | #EE82EE   | #fff      |
+Cinza claro     | #D3D3D3   | #000      |
+*/
+
+/* Zerando tudo */
+* { margin: 0; padding: 0; }
+
+/* Estilização de texto */
+p { text-align: justify; text-indent: 25px; color: #000; text-shadow: 2px 2px 2px #000; }
+h1, h2, h3, h4, h5, h6 { text-align: center; color: #000; text-shadow: 2px 2px 2px #000; }
+a { text-decoration: none; color: darkred; text-shadow: 1px 1px 1px #000; cursor: default; }
+a:hover { opacity: 0.7; text-decoration: underline; }
+
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    background-color: #ff6447;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: 'Dancing Script', cursive;
+}
+header img {
+    width: 150px;
+    mix-blend-mode: darken;
+}
+header h1,header h2,header h3,header h4,header h5,header h6 { text-align: center; color: #fff; }
+
+
+/* Navbar */
+nav {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #BF6858;  
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li a{
+    text-shadow: 2px 2px 2px #000;
+    margin-left: 10px; 
+    margin-right: 10px;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #BF6858;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: sticky;
+    bottom: 3px;
+    z-index: 9999;
+}
+.footer-embaixo {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #BF6858;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+footer p{
+    color: #fff;
+}
+footer a{
+    color: #c48f86;
+}
+
+/* Secções */
+section{
+    background: #ffce9a;
+    margin-left: 10px;   
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 45px;
+    min-height: 500px;
+    display: none;
+}
+section p{ color: #ffff; }
+section h1, section h2, section h3, section h4, section h5, section h6 { color: #fff; }
+
+#inicio {
+    display: block;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.coluna , .coluna-pacote{
+    margin: 5px;
+}
+
+.titulo {
+    text-align: center;
+    background-color: #31849f;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+.conteudo{
+    text-align: center;
+    width: 100%;
+    background-color: #80bbcf;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.conteudo-destaques:hover {
+    opacity: 0.6;
+}
+.conteudo img { 
+    width: 100%;
+}
+.rodape {
+    line-height: 25px;
+    background-color: #31849f;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+    min-height: 100px;
+}
+.tag a {
+    background-color: #fff;
+    color: #a62d17;
+    padding: 5px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px #000;
+    margin: 5px;
+}
+.tag-pesquisa{
+    color:#117934;
+    text-shadow: 1px 1px 1px #000;
+}
+.tag a:hover{
+    opacity: 0.9;
+}
+
+
+ul {
+    list-style: none;
+}
+ul li a{
+    color: #117934;
+}
+.imagem {
+    max-width: 600px;
+    max-height: 400px;
+}
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #A62D17;
+    background-color: #A62D17;
+    font-size: 20px;
+    margin: 10px;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    box-shadow: 2px 2px 2px #000;
+    z-index: 9999;
+}
+button:hover {
+    opacity: 0.6;
+}
+
+.direita {
+    float: right;
+}
+
+@media screen and (max-width: 1120px){
+    .direita {
+        float: unset;
+    }    
+}
+
+
+ul.pesquisar-lista {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+
+input[type=search]{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #6A5ACD;
+    background-image: url('/img/pesquisa.png');
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 30px;
+}
+
+label{
+    color: #117934;
+    text-shadow: 1px 1px 1px #000;
+    
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=url]{
+    border: none;
+    border-bottom: 3px solid darkred; 
+    width: 99%;
+    opacity: 0.5;
+    padding: 10px;
+
+}
+
+select{
+    border: none;
+    border-bottom: 3px solid darkred; 
+    width: 99%;
+    padding: 10px;
+
+}
+
+
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=email]:focus,
+input[type=date]:focus, 
+input[type=url]:focus{
+    opacity: 1;
+}
+
+.radio-group{
+    line-height:30px;
+
+}
+.checkbox-group{
+    line-height: 25px;
+}
+
+input[type=reset]{
+    background-color: yellow;
+    color: #000;
+    border:1px solid yellow;
+
+}
+input[type=submit]{
+    background-color: green;
+    color: #fff;
+    border: 1px solid green;
+}
+input[type=reset],
+input[type=submit]{
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 2px #000;
+
+}
+
+input[type=reset]:hover,
+input[type=submit]:hover{
+    opacity: 0.6;
+
+}
+
+
+
+
+.comando {
+    margin: 10px;
+    border: none !important;
+    width: 90% !important;
+    opacity: 1 !important;
+    
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #000;
+    margin: 10px;
+    padding: 16px;
+    border-radius: 7px;
+    margin: 10px;  
+}
+.card p, .card h4 {
+    color: #000;
+    text-shadow: none;
+}
