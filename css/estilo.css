@@ -306,15 +306,21 @@ input[type=submit]:hover{
     
 }
 
-.card {
-    background-color: #fff;
-    box-shadow: 2px 2px 2px #000;
-    margin: 10px;
+
+.card h4 {
     padding: 16px;
-    border-radius: 7px;
-    margin: 10px;  
+    background-color: #6A5ACD;
+    color: #fff !important;
 }
 .card p, .card h4 {
     color: #000;
-    text-shadow: none;
+    text-shadow: none; 
+    
+}
+.card {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #000;
+    border-radius: 7px;
+    margin: 10px;  
+    padding: 16px; 
 }
