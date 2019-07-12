@@ -58,7 +58,13 @@
             <li>
                 <a href="#cadastro" onclick="mostrar('cadastro')" ng-click="trocarSubtitulo('Cadastro')">
                     <i class="fas fa-user-tie"></i>
-                    Cadastro
+                    Cadastro de Usuário
+                </a>
+            </li>
+            <li>
+                <a href="#cadastro-de-aplicativos" onclick="mostrar('cadastro-de-aplicativos')" ng-click="trocarSubtitulo('cadastro-de-aplicativos')">
+                    <i class="fas fa-code"></i>
+                    Cadastro de Aplicativos
                 </a>
             </li>
             <li>
@@ -327,6 +333,31 @@
 
 
 
+
+            </form>
+        </section>
+
+        <section id="cadastro-de-aplicativos">
+            <h3>Cadastro de Aplicativos</h3>
+            <form>
+
+                <label for="nome">Nome do pacote:</label>
+                <input type="text" name="nome" id="nome" autofocus required ng-model="pacote.nome">
+                <label for="comandos">Comandos para instalar:</label>
+                <textarea></textarea>
+                <label for="icone">Icone do pacote:</label>
+                <input type="file" name="icone" id="icone" autofocus required ng-model="pacote.icone">
+                <br>
+                <label for="imagens">Imagens do pacote:</label>
+                <input type="file" name="imagens" id="imagens" multiple autofocus required ng-model="pacote.imagens">
+                <label for="descricao">Descrição do pacote:</label>
+                <textarea></textarea>
+                <label for="categorias">Categorias do pacote:</label>
+                <textarea></textarea>
+
+                
+                <input type="submit" name="enviar" id="enviar" value="Enviar" ng-click="salvar_usuario()">
+                <input type="reset" name="resetar" id="resetar" value="Limpar">
 
             </form>
         </section>

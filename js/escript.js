@@ -1,5 +1,5 @@
 function mostrar(titulo){
-    let titulos = [ 'inicio', 'destaques', 'loja', 'cadastro', 'desenvolvimento', 'sobre' ];
+    let titulos = [ 'inicio', 'destaques', 'loja', 'cadastro', 'desenvolvimento', 'sobre', 'cadastro-de-aplicativos' ];
     let footerpagina = document.getElementById('footer-pagina').classList;
 
     for(let i = 0; i < titulos.length; i++){
